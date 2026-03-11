@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f3e9e9;
+    color: rgb(69, 109, 109);
+    width: 100%;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #11013d;
+    height: 50px;
+    color: #f3e9e9;
+}
+
+.logo {
+    padding-left: 60px;
+    cursor: pointer;
+}
+
+.logo:hover {
+    color: #ffa500;
+}
+
+.nav nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-right: 10px;
+    gap: 18px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    color: #222;
+}
+
+.heading {
+    display: grid;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.heading h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
+}
+
+.heading p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    border-radius: 20px;
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
+        25px 35px 20px rgba(0, 0, 0, 0.05),
+        25px 30px 30px rgba(0, 0, 0, 0.05),
+        inset -20px -20px 25px rgba(250, 250, 250, 0.9);
+    transition: 0.5s;
+    width: 350px;
+    height: 350px;
+    margin: auto;
+}
+
+.form:hover {
+    border-radius: 50%;
+}
+
+.form form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.form form label {
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-bottom: 4px;
+}
+
+.form form input {
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
+        25px 35px 20px rgba(0, 0, 0, 0.05),
+        25px 30px 30px rgba(0, 0, 0, 0.05),
+        inset -20px -20px 25px rgba(250, 250, 250, 0.9);
+    height: 28px;
+    width: 200px;
+    padding: 4px;
+    margin: 0px 4px 8px 0;
+}
+
+.form textarea {
+    border-radius: 10px;
+    font-size: 18px;
+    padding-left: 4px;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
+        25px 35px 20px rgba(0, 0, 0, 0.05),
+        25px 30px 30px rgba(0, 0, 0, 0.05),
+        inset -20px -20px 25px rgba(250, 250, 250, 0.9);
+    height: 100px;
+}
+
+.form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #222;
+    border: none;
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
+        25px 35px 20px rgba(0, 0, 0, 0.05),
+        25px 30px 30px rgba(0, 0, 0, 0.05),
+        inset -20px -20px 25px rgba(250, 250, 250, 0.9);
+
+    cursor: pointer;
+}
+
+.form button:hover {
+    color: #37a4e4;
+    transition: 0.5s;
+}
+
+/* right */
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2px;
+    height: 350px;
+    width: 350px;
+    margin-right: 13%;
+    border-radius: 10px;
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
+        25px 35px 20px rgba(0, 0, 0, 0.05),
+        25px 30px 30px rgba(0, 0, 0, 0.05),
+        inset -20px -20px 25px rgba(250, 250, 250, 0.9);
+    transition: 0.5s;
+}
+
+.contact-info:hover {
+    border-radius: 50%;
+}
+
+.contact-info h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info p {
+    padding-left: 30px;
+    font-size: large;
+}
+
+.contact-info i {
+    padding-right: 10px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    margin-right: 8px;
+}
+
+@media (max-width:768px) {
+    .contact {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Footer */
+
+footer {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0b081a;
+    color: #f0f8ff;
+    margin-top: 50px;
+    border-radius: 8px;
+}
